@@ -1,0 +1,31 @@
+{
+  "N_EST_CANDIDATES": [
+    100,
+    150,
+    200,
+    275,
+    350,
+    450,
+    600,
+    700
+  ],
+  "SELECT_BEST_BY": "day_citymean",
+  "BEST_N_EST": 700,
+  "STACKING": "Daily_Trees + Daily_NoTree + Daily_Plus10 + Daily_Plus20",
+  "CATEGORICAL_FEATURES_DAYCV_FINAL": [
+    "City"
+  ],
+  "CATEGORICAL_FEATURES_CITYCV": [],
+  "HEMISPHERE_INCLUDED": false,
+  "USE_MONOTONE_TREE_VARS": true,
+  "MONOTONE_CONSTRAINTS": {
+    "f_tree_mean": -1,
+    "LAI_TC_mean": -1
+  },
+  "NOTREE_FEATURE_OVERRIDE": {
+    "f_tree_mean": 0.0,
+    "LAI_TC_mean": 0.0,
+    "applied_in": "Build_CITYDAILY_Emulator_Input_AllTreeLevels.m (MATLAB), not this script"
+  },
+  "PLUS10_PLUS20_SOURCE": "Real UT&C-BEM simulation ground truth (Run_UEHM_100cities_fromTable.m), not model-extrapolated -- achieved f_tree may be < nominal target due to canyon/tree geometry limits; see achieved f_tree in the parameter tables."
+}
